@@ -36,8 +36,16 @@ body {
     width: 100vw;
 }
 
+button {
+    color: white;
+    background-color: #304D30;
+    border-style: none;
+    border-radius: 30px;
+}
+
+
 .dash-logo {
-    margin-top: 20px;    /* padding-left: 0px; */
+    margin-top: 20px;
 
 }
 
@@ -48,9 +56,13 @@ body {
     grid-template-columns: 1fr 4fr;
 }
 
-/* .dash-logo > span > svg {
-    justify-self: start;
-} */
+.dash-logo > span >  h1 {
+    align-self: center;
+    color: white;
+    display: inline-block;
+    font-size: 1.5rem;
+}
+
 
 .grid {
     display: grid;
@@ -60,12 +72,6 @@ body {
     width: 100%;
 }
 
-h1 {
-    align-self: center;
-    color: white;
-    display: inline-block;
-    font-size: 1.5rem;
-}
 
 h2 {
     color: white;
@@ -76,10 +82,39 @@ h2 {
 .header {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+
+    /* Items: */
+    /* display: grid;
+    grid-template-rows: 2fr 3fr; */
+}
+
+.header > div {
+    padding-left: 60px;
+    padding-right: 90px;
+}
+
+input {
+    background-color: #EEF0E5;
+    border-style: none;
+    border-radius: 20px;
+    height: 50%;
+    width: 75%;
+}
+
+.left-side {
+    display: grid;
+    grid-template-columns: 1fr 20fr;
+    height: 100%;
+    place-items: center;
+}
+
+.left-side > svg,
+.left-side > input {
+    justify-self: start;
 }
 
 .main-content {
-    background-color: #B6C4B6;
+    background-color: #c4cac4;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
 }
@@ -93,7 +128,63 @@ h2 {
     width: 100%;
 }
 
+.right-side {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: start;
+    height: 100%;
+}
 
+.right-side > svg:first-child {
+    justify-self: end;
+}
+
+.right-side > svg:nth-child(2) {
+    justify-self: center;
+}
+
+.row1 {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    height: 40%;
+    width: 100%;
+}
+
+.row2 {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.row2-left {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    
+}
+
+.row2-left > div:nth-child(1) {
+    display: grid;
+
+}
+
+.row2-left > div:nth-child(2) {
+    display: grid;
+}
+
+
+.row2-left > div > h1 {
+    font-size: 1.4rem;
+}
+
+.row2-right {
+    align-self: center;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    height: 50%;
+}
 
 .sidebar {
     background-color: #304D30;
@@ -101,7 +192,5 @@ h2 {
     grid-row: 1 / -1;
     padding-left: 15px;
 
-    /* Items: */
-    /* display: grid; */
 }
 
