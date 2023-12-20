@@ -8,6 +8,13 @@
     font-size: 16px;
 }
 
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
 .account-settings {
     display: grid;
     grid-template: repeat(3, 1fr) / 1fr;
@@ -53,6 +60,12 @@
     justify-self: center;
 }
 
+.activities > svg:hover {
+    fill: #CC0000
+
+}
+
+
 .announcement-heading {
     font-size: 1rem;
 }
@@ -68,11 +81,17 @@
     font-size: 0.9rem;
 }
 
+.announcement:hover {
+    background-color: #EEF0E5;
+    cursor: pointer;
+}
+
 .announcements {
 
     background-color: whitesmoke;
     border-radius: 10px;
     height: 300px;
+    margin-right: 25px;
     padding: 22px;
 
     /* Items: */
@@ -80,7 +99,6 @@
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     justify-items: center;
-    /* row-gap: 8px; */
 }
 
     
@@ -88,6 +106,20 @@ body {
     height: 100vh;
     width: 100vw;
 }
+
+.bottom-card {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    height: 260px;
+    margin-right: 25px;
+    padding: 15px 0px 15px 15px;
+
+    /* Items: */
+    display: grid;
+    grid-template: repeat(4, 1fr) / 1fr;
+    
+}
+
 
 button {
     color: white;
@@ -102,11 +134,17 @@ button {
     border-left-color: #304D30;
     border-radius: 10px;
     border-width: 0px 0px 0px 10px;
-    height: 250px;
+    height: 280px;
 
     /* Items: */
     display: grid;
     grid-template-rows: 7fr 3fr;
+}
+
+
+.cards:hover {
+    background-color: #EEF0E5;
+    cursor: pointer;
 }
 
  .card-text {
@@ -178,13 +216,13 @@ h2 {
     font-size: 1rem;
 }
 
+h4 {
+    font-weight: normal;
+}
+
 .header {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-
-    /* Items: */
-    /* display: grid;
-    grid-template-rows: 2fr 3fr; */
 }
 
 
@@ -313,4 +351,24 @@ input {
 
 .side-container-top {
     margin-top: 30px;
+}
+
+#trending-heading {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.trending-topic {
+    align-items: center;
+    column-gap: 15px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    
+}
+
+
+.trending-topic:hover {
+    background-color: #EEF0E5;
+    cursor: pointer;
 }
