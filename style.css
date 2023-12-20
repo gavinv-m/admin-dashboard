@@ -30,11 +30,29 @@
     width: 20px;
 }
 
+.activities {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr;
+    margin-right: 10px;
+
+}
+
 .activities > svg {
     fill: black;
     height: 20px;
     width: 20px;
 }
+
+.activities > svg:first-child {
+    justify-self: end;
+    margin-right: 10px;
+}
+
+.activities > svg:nth-child(n+2) {
+    justify-self: center;
+}
+
 
 
 body {
@@ -49,10 +67,51 @@ button {
     border-radius: 30px;
 }
 
+.cards {
+    background-color: whitesmoke;
+    border-color: #304D30;
+    border-left-style: solid;
+    border-left-color: #304D30;
+    border-radius: 10px;
+    border-width: 0px 0px 0px 10px;
+    height: 250px;
+
+    /* Items: */
+    display: grid;
+    grid-template-rows: 7fr 3fr;
+}
+
+ .card-text {
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    padding: 10px 12px 0 10px;
+    row-gap: 3px;
+ }
+
+ .card-text > strong:first-child {
+    align-self: end;
+ }
+
 
 .cards-container {
     display: grid;
     grid-template-rows: 1fr 20fr;
+    row-gap: 10px;
+}
+
+.cards-container-heading {
+    align-self: end;
+    font-size: 1.2rem;
+}
+
+.cards-container > div {
+    padding-left: 20px;
+}
+
+.cards-grid {
+    display: grid;
+    column-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
 .dash-logo {
